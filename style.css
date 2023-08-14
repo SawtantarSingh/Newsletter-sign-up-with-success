@@ -216,6 +216,9 @@ ul > li:nth-child(2) {
   .modal-btn-size {
     width: 323px;
   }
+  .grid-text {
+    padding: 35px;
+  }
 }
 .hidden {
   display: none;
