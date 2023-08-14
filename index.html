@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--- Outside Container -->
+    <div class="container">
+      <!--- Main Container  -->
+      <div class="grid-container">
+        <!--- LEft Side  -->
+        <div class="grid-text">
+          <h1 class="typography">Stay Updated!</h1>
+          <p class="typography">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="typography">
+            <li>Product discovery and buliding what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <div class="address">
+          <p class="para-email typography">Email address</p>
+          <p class="para-invalid typography">Invalid Input</p>
+        </div>
+          <input type="email" class="input-email size-input" placeholder="email@company.com"></input>
+          <button type="submit" class="btn-subscribe size submit">
+            Subscrive to monthly newsletter
+          </button>
+        </div>
+
+        <!---Right Side -->
+        <picture class="grid-img">
+          <source media="(min-width: 1023px)" srcset="/assets/images/illustration-sign-up-desktop.svg">
+          <source media="(min-width: 319px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+          <img src="/assets/images/illustration-sign-up-desktop.svg" alt="IfItDoesntMatchAnyMedia">
+      </picture>
+      </div>
+      
+    </div>
+  <!--------------Modal ------------------>
+  <div class="modal-container hidden">
+    <div class="modal ">
+    <img src="./assets/images/icon-list.svg" alt="tick">
+    <h1 class="typography">Thanks for Subscribing!</h1>
+    <p class="typography">A confirmation email has been sent to 
+     <span class="success">EMAIL</span> Please open it and click the button to confirm your subscription.
+   </p>
+   <button class="btn-dismiss modal-btn-size">Dismiss Message</button>
+   </div>
+  </div>
+
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sawtantar</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
